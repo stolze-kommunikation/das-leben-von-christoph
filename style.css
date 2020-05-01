@@ -1,0 +1,1219 @@
+body{
+  margin:0;
+  padding:0;
+  background:#F5F5F5;
+}
+
+h1,h2{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  margin:0;
+}
+
+h1{
+ 	font-size: 40px;	
+	}
+	
+h2{
+	font-size: 28px;		
+	}
+
+p{
+  /*font-size: 14px;*/
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  /*font-weight: 400;*/
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+#zickzack {
+  position: relative;
+  margin:0;
+  bottom: 0;
+  width: 100%;
+  height: 8px;
+  border: none;
+  background-position: top;
+  background-repeat: repeat-x;
+}
+
+.hr1{
+  background-image: url("../assets/hr1.png");
+}
+.hr2{
+  background-image: url("../assets/hr2.png");
+}
+.hr3{
+  background-image: url("../assets/hr3.png");
+}
+.hr4{
+  background-image: url("../assets/hr4.png");
+}
+.hr5{
+  background-image: url("../assets/hr5.png");
+}
+
+.clear{
+  clear: both;
+}
+/*.contentbox{
+  margin: 0 auto;
+  height: 650px;
+}*/
+img{
+  float: left;
+  /*padding-right: 20px;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+/*------------------------ ABSTÄNDE AUF SPEZIELLEN SEITEN -------------------------*/
+#gebote, #kopfbedeckung, #prophet, #geschichte, #feiertage, #anmeldung{
+	padding:10%;
+	}
+
+/*------------------------ SCROLL ICON -------------------------*/
+.loader {
+  width: 22px;
+  height: 42px;
+  border-radius: 15px;
+  position: absolute;
+  border: 4px solid #fff;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  right: 0;
+  bottom: 0;
+  z-index:1;
+  margin: auto;
+  -webkit-transition: opacity 1s 0.5s ease-out;
+  transition: opacity .25s ease-out;
+}
+
+.loader.is-hidden {
+  opacity: 0;
+}
+
+.loader:after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 4px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  margin: auto;
+  -webkit-animation: loader 2s infinite;
+          animation: loader 2s infinite;
+  background: #fff;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    margin-top: 0;
+    opacity: 1;
+  }
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+}
+
+/*------------------------ INTRO SCROLL FADE -------------------------*/
+
+.hideme {
+  opacity: 0;
+  width: 90%;
+  max-width: 1000px;
+  /*height: 80vh;*/
+  margin: 5% auto;
+}
+
+.hideme img{
+  padding-right: 10%;
+  width: 45%;
+  max-width: 500px;
+  height: auto;
+}
+
+.hideme p{
+ width: 45%; 
+ float: right;
+}
+
+.brutzel p{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#intro{
+  height: 80vh;
+}
+
+#intro h1{
+  position: absolute;
+  text-align: center;
+  /* margin: 0 auto; */
+  left: 25%;
+  width: 50%;
+  top: 2%;
+  /* right: 0; */
+  z-index: 1;
+}
+
+#intro_container{
+  position: relative;
+  /*height: 1700px; ----------------- RAUS TEST*/
+  background:#0070BA;
+  color:#fff;
+}
+
+#items {
+  /*width: 1000px;*/
+  width: 90%;
+  max-width: 1000px;
+  height: 500px;
+  position: fixed;
+  /*top: 200px;
+  left: 100px;*/
+  top: 15%;
+  left: 10%;
+}
+
+.out-of-view{
+  /*background: red;*/
+  right: 0!important;
+  top: -100%!important;
+  transition-duration: 1s;
+}
+
+#items .item {
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  float:left;
+}
+div#trenner {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  /*background: red;*/
+  width: 100%;
+  z-index: 99999999;
+}
+
+/*
+#items .item01 {
+  background-image: url("http://placekitten.com/500/500")
+}
+
+#items .item02 {
+  background-image: url("http://placekitten.com/500/500")
+}
+
+#items .item03 {
+  background-image: url("http://placekitten.com/500/500")
+}
+
+#items .item04 {
+  background-image: url("http://placekitten.com/500/500")
+}
+
+#items .item05 {
+  background-image: url("http://placekitten.com/500/500")
+}*/
+
+
+.container{
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+
+.slide_container{
+  /*width:1000px;
+  width: 80%;*/
+  width: 100%;
+  height:500px;
+  opacity: 0;
+  position: absolute;
+}
+
+.slide_container img{
+  float:left;
+  width: 50%;
+  max-width: 500px;
+}
+
+.slide_container p{
+  margin:0;
+  /*width:480px;*/
+  width: 48%;
+  padding-left: 2%;
+  height: 200px;
+  float:left;
+  background:#0070BA;
+}
+
+#slide6 p{
+  font-size: 40px;  
+  font-weight: 400;
+}
+
+#himmelanfang{
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  background-image: url("../assets/intro_wolken.png");
+  height:493px;
+  width:100%;
+}
+
+/*------------------------ HIMMEL -------------------------*/
+
+#himmelende{
+  position: absolute;
+  top: 0;
+  background-image: url("../assets/paradies_wolken.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height:617px;
+  width:100%;
+  z-index: 2;
+}
+
+#himmel{
+  height: 1500px;
+  position: relative;
+  background:#70b8b4;
+  z-index: 1;
+  padding-top: 40%; /*----- GROBE POSITIONIERUNG ------*/
+  overflow: hidden;
+}
+
+/*edit ssi*/ 
+.blatt{
+  z-index: -1;
+  position: relative;
+}
+
+#blaetter02{
+  position: absolute;
+  width:207px;
+  height: 268px;
+  top: 480px;
+  left: 0;
+  background-image: url("../assets/blaetter_02.png");
+}
+
+#blaetter03{
+  position: absolute;
+  width:230px;
+  height: 270px;
+  top: 360px;
+  right: 0;
+  background-image: url("../assets/blaetter_03.png");
+}
+
+#blaetter04{
+  position: absolute;
+  width:219px;
+  height: 380px;
+  top: 560px;
+  right: 0;
+  background-image: url("../assets/blaetter_04.png");
+}
+
+#blaetter05{
+  position: absolute;
+  width:172px;
+  height: 321px;
+  top: 960px;
+  right: 0;
+  background-image: url("../assets/blaetter_05.png");
+}
+
+#blaetter06{
+  position: absolute;
+  width:172px;
+  height: 321px;
+  top: 770px;
+  left: 0;
+  background-image: url("../assets/blaetter_06.png");
+}
+
+#blaetter07{
+  position: absolute;
+  width:219px;
+  height: 380px;
+  top: 1050px;
+  left: 0;
+  background-image: url("../assets/blaetter_07.png");
+}
+
+#protagonist{
+  position: absolute;
+  /*top: 480px;*/
+  top: 0;
+  /*left:140px;*/
+  left: 0;
+  background-image: url("../assets/engel.png");
+  /*width: 500px;*/
+  width: 100%;
+  /*height: 500px;*/
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
+  background-size: 500px 500px;
+  background-attachment: fixed;
+  z-index:1;
+
+}
+
+#biervulkan{
+  background-image: url("../assets/biervulkan.png");
+  width: 500px;
+  height: 500px;
+}
+
+#fabrik{
+  background-image: url("../assets/fabrik.png");
+  width: 1000px;
+  height: 372px;
+}
+
+#biervulkan_container {
+  position: absolute;
+  top: 680px;
+  left:40%;
+  width: 60%;
+  overflow: visible;
+}
+
+#biervulkan_container p{
+  color:#304251;
+  position: absolute;
+  width:50%;
+  top: 100%;
+  left: 2.5%;
+}
+
+#fabrik_container {
+  position: absolute;
+  top: 1650px;
+  left: 10%;
+  width: 90%;
+  overflow: visible;
+}
+
+#fabrik_container p{
+  color:#304251;
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  width:30%;
+}
+
+#himmelanfang2{
+  position: absolute;
+  bottom: 0;
+  background-image: url("../assets/paradies_wolken_02.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height:637px;
+  width:100%;
+  z-index: 2;
+}
+
+/*------------------------ SCHÖPFUNGSGESCHICHTE -------------------------*/
+
+#himmelende2{
+  position: absolute;
+  top: 0;
+  left:0;
+  background-image: url("../assets/paradies_wolken_03.png");
+  height:532px;
+  width:100%;
+}
+
+#geschichte{
+  padding-top: 400px;
+	background-color:#fba2e6;
+	color:#704867;	
+  position: relative;
+	}
+
+.geschichte_section{
+  background-color: #fba2e6;
+}
+
+#geschichte article{
+	float: left;
+    width: 50%;
+	}	
+
+.time{
+  margin-top:10%; 
+  }
+
+.time .circle {
+    background: #FE47C5;
+    border-radius:50%;
+    float:left;
+    height:30px;
+    margin: -3.45% 7% 0 0;
+    position: relative;
+    text-align: center;
+    width:30px;
+}
+
+.timeline{
+  float:left;
+  width:88%;
+  background-color:#FE47C5;
+  border-top:solid 3px #FE47C5;
+}
+
+.time .active{
+    background: #fff !important;
+  border:3px solid #FE47C5;
+  height: 27px !important;
+    width: 27px !important; 
+}
+
+.timeline-next{
+  width:100%;
+  border-top:dashed 3px #FE47C5;
+}
+
+.geschichte_text{
+  background-color: #fff;
+    margin-top: 10%;
+    padding:4%;
+}
+  
+#story1, #story2, #story3, #story4, #story5, #story6, #story7{
+  display:none;
+  }  
+
+/*------------------------ PROPHET & EVANGELIUM -------------------------*/
+
+#prophet{
+	background-color:#664D9C;
+	color:#FFEED9;	
+	}
+	
+#prophet article{
+	float: left;
+    margin:3% 6% 0 0;
+    width: 50%;
+	}	
+
+#prophet img{
+ 	float: left;
+  margin-top: 10%;
+	}	
+
+
+/*------------------------ GEBOTE -------------------------*/
+
+#gebote{
+  background-color:#febfc7;
+  color:#503900;  
+  }
+
+#gebote h1{
+  margin-top:2%;
+  }
+
+.gebote_zahlen_box{
+    position: relative;
+    width: 30%;
+  float:left;
+}
+.gebote_zahlen_box .circle {
+    background: #503900 none repeat scroll 0 0;
+    border-radius: 50%;
+    float: left;
+    height: 80px;
+    margin: 5% 10% 0 0;
+    position: relative;
+    text-align: center;
+    width: 80px;
+}
+
+.gebote_zahlen{
+  color:#FFF;
+  font-size: 2.4em;
+  left: 38%;
+  position: absolute;
+  top: 17%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+
+#gebote article{
+    float: left;
+    position: relative;
+    width: 70%;
+}
+
+.gebote_text{
+  position:absolute;
+  margin-top:3%;
+}
+
+#gebot1, #gebot2, #gebot3, #gebot4, #gebot5, #gebot6, #gebot7, #gebot8{
+  display:none;
+  }
+
+
+/*------------------------ KOPFBEDECKUNG -------------------------*/
+
+#kopfbedeckung{
+  background-color:#ff8d6b;
+  color:#5C3327;
+}
+
+#kopfbedeckung article{
+  float: left;
+    margin: 3% 6% 0 0;
+    width: 50%;
+  } 
+
+#kopfbedeckung img{
+  float: left;
+  }
+  
+#kopfbedeckung a{
+  color:#B8EEA2;
+  font-weight: 400;
+  }
+  
+  
+/*------------------------ ACCORDION FEIERTAGE -------------------------*/
+
+#feiertage {
+  background-color: #2fc7b2;
+  color: #005479;
+}
+
+.feiertage_section{
+  background-color: #2fc7b2;
+}
+
+.accordion {
+  width:50%;
+  float:left;
+  margin:3% 2% 0 0;
+}
+
+.accordion dt{
+  background-color:#0080A2;
+  color:#b7eda1;
+  }
+
+.accordion dt, .accordion dd {
+  padding: 15px;
+  border-top: 3px solid #2fc7b2;
+  border-bottom: 0;  
+}
+
+.accordion dd {
+  border-top: 0;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;  
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: left;
+  color: #005479;
+  margin-left: 0;
+  background-color: #aceadf;
+  letter-spacing: auto;
+}
+
+.accordion dt a, .accordion dd a {
+  display: block;
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;  
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+.accordion dd:last-of-type {
+  position: relative;
+  top: -1px;
+}
+
+#feiertage img{
+  margin-top:3%;
+  }
+
+
+
+/*------------------------ ANMELDUNG -------------------------*/
+
+#anmeldung {
+  background-color: #F2E274;
+  text-align: center;
+  color: #005479;
+  position:absolute;
+  padding-bottom: 4%;
+}
+
+
+form {
+  width: 60%;
+  margin: auto;
+}
+
+#anmeldung p {
+  margin: 5% auto;
+  width: 70%;
+ }
+
+.input {
+  display: flex;
+  align-items: center;
+  color:#fff;
+}
+
+input:focus {
+  outline: none;
+  outline: 2px solid #005479;
+  box-shadow: 0 0 2px #005479;
+}
+
+.button {
+  height: 44px;
+  border: none;
+}
+
+#email {
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  width: 70%;
+  background: #fff;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+#submit {
+  /*width: 35%;*/
+  height: 46px;
+  padding: 0 25px;
+  background: #005479;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  line-height: 3em;
+  color: inherit;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+
+#submit:hover {
+  background: #003E59;
+}  
+
+.stoerer{
+  background:url("../assets/stoerer.png") no-repeat;
+  height:150px;
+  width:150px;
+  position:absolute;
+  top:10%;
+  right:16%;
+  }
+
+/*------------------------ POP UP -------------------------*/
+
+.article
+{
+  margin-top: 50px;
+  text-align: center;
+  background: #E86C8D;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------- POP UP ANMELDUNG -------------------*/
+
+.popup {
+  margin: 70px auto;
+  padding: 40px;
+  background: #fff;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  overflow-y: scroll;
+}
+
+.popup h2 {
+  font-size: 40px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #005479;
+}
+.popup .close:hover {
+  color: #AAA;
+}
+.popup .content {
+  text-align: center;
+  /*max-height: 30%;
+  overflow: scroll;*/
+}
+
+/*--------------- POP UP IMPRESSUM -------------------*/
+
+.popup2 {
+  margin: 40px auto;
+  padding: 80px 40px;
+  background: #fff;
+  width: 60%;
+  height:80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  overflow-y: scroll;
+  z-index: 9999;
+}
+
+#popup2 p{
+  margin: 0 0 5% 0;
+  width:100%;
+}
+
+.popup2 p{
+  font-size:1em;
+}
+
+.popup2 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup2 .close {
+  position: absolute;
+  /*position: fixed;*/
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #005479;
+}
+
+.popup2 .content {
+  text-align: left;
+  /*max-height: 30%;
+  overflow: scroll;*/
+}
+
+.popup2 .content p{
+  margin:0;
+}
+
+ 
+/*#popup
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  display: none;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 1s;
+  z-index: 9999;
+}
+
+
+#popup p
+{
+  background: #E86C8D;
+  color: #fff;
+  height: 5em;
+  width: 5em;
+  margin: auto;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  font-size: 2em;
+  text-align: center;
+  padding:2em 3em 4em 3em;
+  
+}
+
+#popup2
+{
+  background-color: #005479;
+  
+  /*bottom: 0;*/
+  /*display: none;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 1s;
+  z-index: 9999;
+}
+
+#popup2 p
+{
+  width: 90%;
+  color: #fff;
+  margin: auto;
+  font-size: 16px;
+  text-align: left;
+  padding:2em 0em 0em 0em;
+  
+}*/
+  
+/*------------------------ SHARING -------------------------*/
+
+#anmeldung h2{
+  margin-top:5%; 
+  margin-bottom:5%;  
+  }
+  
+.share{
+  margin-left:33%;
+  }
+  
+.share img{
+  margin:5%;  
+  }
+
+.button_impressum {
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.button_impressum:visited{
+  color: #005479;
+}
+
+/*------------------------ FOOTER -------------------------*/
+
+#footer {
+  
+}
+
+/*------------------------ RESPONSIVE -------------------------*/
+
+@media only screen and (max-width : 800px){
+
+/*------------------------ INTRO SCROLL FADE -------------------------*/
+
+#intro h1{
+  font-size: 24px;
+}
+
+#items {
+  top: 2%;
+}
+
+.hideme img{
+  width: 100%;
+  padding:0;
+}
+
+.hideme p{
+  /*font-size: 40px;*/
+  width: 100%;
+  height: 240px;
+  /*float: none;*/
+}
+
+/*------------------------ HIMMEL -------------------------*/
+
+#himmel{
+  height: 780px;
+}
+
+#protagonist{
+  background-size: 50%;
+}
+
+#biervulkan{
+  background-size: 50%;
+  height:250px;
+  background-repeat: no-repeat;
+}
+
+#biervulkan_container{
+  top: 340px;
+}
+
+#biervulkan_container p{
+  width: 80%;
+}
+
+#fabrik{
+  background-size: 50%;
+  height:186px;
+  background-repeat: no-repeat;
+  background-position: -33% 0;
+}
+
+#fabrik_container{
+  top: 920px;
+  left: 0;
+}
+
+#fabrik_container p{
+  width: 50%;
+}
+
+#blaetter02, #blaetter03, #blaetter04, #blaetter05, #blaetter06, #blaetter07{
+  display: none;
+}
+
+/*------------------------ KOPFBEDECKUNG -------------------------*/
+
+#kopfbedeckung article, #geschichte article, #prophet article {
+  width: auto;
+}
+
+.accordion{
+  width: 100%;
+}
+
+.stoerer{
+  position: relative;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.time .circle {
+  height: 20px;
+  width: 20px;
+}  
+
+.time .active {
+  height: 17px !important;
+  width: 17px !important;
+}
+
+.share {
+  margin-left: 23%;
+}
+
+form {
+  width: 100%;
+}
+
+}
+/* iPhone*/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+	article, #anmeldung p
+	{ width:100% !important;
+	line-height:1.7em !important;
+	font-size:28px !important;}
+	
+	.accordion{
+		width:100% !important;
+		}
+	.accordion a{
+		font-size:26px !important;
+		}	
+	#gebote p{
+		font-size:26px !important;
+		}
+	.gebote_text{
+		position:relative !important;
+		margin-top:100px !important;
+		}
+	.gebote_zahlen_box{
+		width:100% !important;
+		margin-bottom:50px !important;
+		}
+	.gebote_zahlen_box .circle{
+		margin:5% 12% 0 0 !important;
+		height:100px !important;
+		width:100px !important;
+		}
+	.gebote_zahlen{
+		    left: 42% !important;
+			top:25% !important;
+		}
+	h2{
+		font-weight:600 !important;
+		}	
+	#prophet img,
+	#kopfbedeckung img,
+	#feiertage img,
+	#geschichte img{
+		margin-left:200px !important;
+		}
+	#geschichte h1{
+	    margin-top: 445px !important;;
+		}
+	#biervulkan_container p{
+		    font-size: 27px !important;;
+			width:80% !important;
+		}
+	#fabrik_container p{
+		font-size:27px !important;	
+		left: 37% !important;
+    	width: 47% !important;
+	}
+	.hideme p, .popup2 p{
+		font-size:27px !important;
+		}
+	#feiertage img{margin-top:15% !important}
+	
+
+}
+/* Galaxy*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	article, #anmeldung p
+	{ width:100% !important;
+	line-height:1.7em !important;
+	font-size:28px !important;}
+	
+	.accordion{
+		width:100% !important;
+		}
+	.accordion a{
+		font-size:26px !important;
+		}	
+	#gebote p{
+		font-size:26px !important;
+		}
+	.gebote_text{
+		position:relative !important;
+		margin-top:100px !important;
+		}
+	.gebote_zahlen_box{
+		width:100% !important;
+		margin-bottom:50px !important;
+		}
+	.gebote_zahlen_box .circle{
+		margin:5% 12% 0 0 !important;
+		height:100px !important;
+		width:100px !important;
+		}
+	.gebote_zahlen{
+		    left: 42% !important;
+			top:25% !important;
+		}
+	h2{
+		font-weight:600 !important;
+		}	
+	#prophet img,
+	#kopfbedeckung img,
+	#feiertage img,
+	#geschichte img{
+		margin-left:200px !important;
+		}
+	#geschichte h1{
+	    margin-top: 445px !important;;
+		}
+	#biervulkan_container p{
+		    font-size: 27px !important;;
+			width:80% !important;
+		}
+	#fabrik_container p{
+		font-size:27px !important;	
+		left: 37% !important;
+    	width: 47% !important;
+	}
+	.hideme p, .popup2 p{
+		font-size:27px !important;
+		}
+	#feiertage img{margin-top:15% !important}
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.time .circle{
+		height:20px !important;
+		width:20px !important;
+		}
+	.time .active{
+		height:17px !important;
+		width:17px !important;
+		}
+	#prophet article, 
+	#kopfbedeckung article{
+		width:100% !important
+	}	
+	#kopfbedeckung img,
+	#feiertage img,
+	#prophet img{
+		margin-left:200px !important;
+		}
+	.accordion{
+		width:100% !important;
+		}
+	.gebote_text{
+		position:relative !important;
+		}
+}
