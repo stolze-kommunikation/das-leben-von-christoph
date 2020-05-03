@@ -92,48 +92,22 @@ $(document).ready(function() {
 
 ////////////////////////// POP UP1 ////////////////////////// 
 
-$("a[href='#popup']").on("click", openPopUp);
-$("#popup").on("click", closePopUp);
-
-function i()
-{
-  alert("afa");
-}
-
-function openPopUp()
-{
-  $("#popup").css({"display": "block",
-                   "opacity": 1});
-}
-
-function closePopUp()
-{
-  $("#popup").css({"display": "none",
-                   "opacity": 0});
-}
+$("a[href='#popup']").on("click", function() {
+  $("#popup").css({"display": "block", "opacity": 1});
+});
+$("#popup").on("click", function(e) {
+  e.preventDefault();
+  $("#popup").css({"display": "none", "opacity": 0});
+});
 
 ////////////////////////// POP UP2 ////////////////////////// 
 
-$("a[href='#popup2']").on("click", openPopUp);
-$("#popup2").on("click", closePopUp);
-
-function i()
-{
-  alert("afa");
-}
-
-function openPopUp()
-{
-  $("#popup2").css({"display": "block",
-                   "opacity": 1});
-}
-
-function closePopUp(e)
-{
+$("a[href='#popup2']").on("click", function () {
+  $("#popup2").css({"display": "block", "opacity": 1});
+});
+$("#popup2").on("click", function (e) {
   e.preventDefault();
-  $("#popup2").css({"display": "none",
-                   "opacity": 0});
-}
-
+  $("#popup2").css({"display": "none", "opacity": 0});
+});
 
 });
