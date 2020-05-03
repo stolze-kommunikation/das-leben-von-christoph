@@ -128,8 +128,9 @@ function openPopUp()
                    "opacity": 1});
 }
 
-function closePopUp()
+function closePopUp(e)
 {
+  e.preventDefault();
   $("#popup2").css({"display": "none",
                    "opacity": 0});
 }
